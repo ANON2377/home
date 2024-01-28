@@ -11,9 +11,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Bootstrap CSS 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
    <title>Find A Friend</title>
     <link rel="stylesheet" href="index.css">
@@ -27,53 +26,42 @@
   <div class="blurt" id="bluery">
 
   
-  <h1>
-    <header class="text-white-600 body-font">
-      
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" 
-            stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl"><a href="index.html" target="_self">Find A Friend</a></span>
-          </a>
-          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base
-           justify-center">
-            <li class="mr-5 hover:text-orange-300"><a href="index.html" target="_self" > HOME </a></li>
-            <li class="mr-5 hover:text-orange-300"><a href="pets.html" target="_self"> PETS</a></li>
-            <li class="mr-5 hover:text-orange-300"><a href="food.html" target="_self">FOOD </a></li>
-            <li class="mr-5 hover:text-orange-300"><a href="accessories.html" target="_self">ACCESSORIES </a></li>
-            <li class="mr-5 hover:text-orange-300"><a href="pet_care.html" target="_self">PET CARE  </a></li>
-            <li class="mr-5 hover:text-orange-300"><a href="pet_toys.html" target="_self">PET TOYS  </a></li>
-            <li class="mr-5 hover:text-gray-900"><a href="pet_home.html" target="_self">PET HOME</a></li>
-            </div>
-          </nav>
-          <h1 style="
-          font-size: 30px;
-           color: solid, white; 
-           float: right; 
-           flex: wrap;
+    <h1>
+      <header class="text-white-600 body-font">
+        
+          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white-900 mb-4 md:mb-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" 
+              stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span class="ml-3 text-xl"><a href="index.html" target="_self">Find A Friend</a></span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base
+             justify-center">
+              <li class="mr-5 hover:text-orange-300"><a href="index.html" target="_self" > HOME </a></li>
+              <li class="mr-5 hover:text-orange-300"><a href="pets.html" target="_self"> PETS</a></li>
+              <li class="mr-5 hover:text-orange-300"><a href="food.html" target="_self">FOOD </a></li>
+              <li class="mr-5 hover:text-orange-300"><a href="accessories.html" target="_self">ACCESSORIES </a></li>
+              <li class="mr-5 hover:text-orange-300"><a href="pet_care.html" target="_self">PET CARE  </a></li>
+              <li class="mr-5 hover:text-orange-300"><a href="pet_toys.html" target="_self">PET TOYS  </a></li>
+              <li class="mr-5 hover:text-gray-900"><a href="pet_home.html" target="_self">PET HOME</a></li>
+              </div>
+            </nav>
+  
+            <button class="inline-flex items-center bg-black-900 border-0 py-1 px-3 focus:outline-none hover:bg-blue-900
+             rounded text-base mt-4 md:mt-0"><a href="http://localhost/project2/register.php" target="_self">JOIN US</a>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+              class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+          </div>
+        </header>
 
-  ">
-          <?php
-           $link = mysqli_connect( "localhost","root","","project");
-           if (mysqli_connect_error()) {
-               die ("Connection error");
-           
-           }
-          $query = "select * from users";
-if ($result = mysqli_query($link, $query)) {
-    $row = mysqli_fetch_array($result);
-    echo "Welcome back <hr><background-images url="icons.png"></img>".$row[1];
-} ?></h1>
-          
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-        </div>
-      </header>
+
+    
 
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -732,6 +720,7 @@ if ($result = mysqli_query($link, $query)) {
     </span>
   </div>
 </div>
+
   </h1>
   <script>
     var prevScrollpos = window.pageYOffset;
