@@ -1,5 +1,4 @@
 /* Style the header */
-/* Style the header */
 @media only screen and (max-width: 768px) {
   .content-container {
     flex-direction: column;
@@ -9,105 +8,70 @@
     width: 100%;
     margin: 10px auto;
   }
-  .blurt {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: rgb(211, 25, 25);
-    font-weight: bold;
-    border: 3px solid #f1f1f1;
-    border-radius: 5%;
-    position:fixed;
-    top: 21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 100%;
-    padding: 22px;
-    height: auto;
-    text-align: center;
-    transition: top 0.5s;
-  
-  }
 }
 
-.blur {
-    background-image: url(deskstop.jpg);
-    filter: blur(1px);
-    -webkit-filter: blur(4px);
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body{
-    background-color: beige;
-  }
- 
- 
+
+
+body{
+  background-color: beige;
+}
+
+
 
 .blurt {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  border-radius: 5%;
-  position:fixed;
-  top: 21%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 100%;
-  padding: 22px;
-  height: auto;
-  text-align: center;
-  transition: top 0.5s;
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+color: rgb(255, 255, 255);
+font-weight: bold;
+border: 3px solid #f1f1f1;
+border-radius: 5%;
+position:absolute;
+top: 21%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+width: 100%;
+
+height: 20%, auto;
+text-align: center;
+transition: top 0.5s;
 
 }
 
-  /* Style the footer */
+.space-btw{
+  height: 200px;
+}
+
+/* Style the footer */
 footer {
-    background-color:rgb(0, 0, 0);
-    padding: 10px;
-    text-align: center;
-    color: white;
-    z-index: 3;
+  background-color:rgb(0, 0, 0);
+  padding: 10px;
+  text-align: center;
+  color: white;
+  z-index: 3;
+}
+
+/* login page  */
+  .cascading-right {
+    margin-right: -50px;
   }
 
-  /* login page  */
+  @media (max-width: 991.98px) {
     .cascading-right {
-      margin-right: -50px;
+      margin-right: 0;
     }
-
-    @media (max-width: 991.98px) {
-      .cascading-right {
-        margin-right: 0;
-      }
-    }
-
-    .top{
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      font-weight: bold;
-      background-color:burlywood;
-      
-      position: fixed;
-      top: 93%;
-      left: 8px;
-      z-index: 4;
-      padding: 5px;
-      border-radius: 30%;
-    }
-   
-  .welcome{
-  font-size: 200px;
-  color: black; 
-  float: right; 
-  flex: wrap;
-   
   }
 
+  .top{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color:burlywood;
+    
+    position: fixed;
+    top: 93%;
+    left: 8px;
+    z-index: 4;
+    padding: 5px;
+    border-radius: 30%;
+  }
