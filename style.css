@@ -1,0 +1,191 @@
+/* Global styles */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  a:hover {
+    color: #0062cc;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  /* Header styles */
+  
+  header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  /* Main content styles */
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  .error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #721c24;
+  }
+  
+  .error-message p {
+    margin: 5px 0;
+  }
+  
+  /* Form styles */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input, select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0062cc;
+  }
+  
+  /* Pet detail styles */
+  
+  .pet-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .pet-details img {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .pet-details .info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .owner-actions, .contact-owner {
+    text-align: right;
+  }
+  
+  .owner-actions a {
+    margin-right: 10px;
+  }
+  
+  /* Profile styles */
+  
+  .profile-info {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  
+  .profile-info ul {
+    margin-top: 10px;
+  }
+  
+  .profile-info li {
+    margin-bottom: 5px;
+  }
+  
+  .posted-pets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .posted-pets li {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .posted-pets img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Media queries */
+  
+  @media (max-width: 768px) {
+    .pet-details {
+      flex-direction: column;
+    }
+  
+    .pet-details img {
+        width: 100%;
+        height: auto;
+      }
+    
+      .posted-pets li {
+        text-align: left;
+      }
+    }
